@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Intermittent Connection Drops - Model M7215</title>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+h1 {
+    color: #333;
+}
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+p {
+    line-height: 1.6;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.troubleshooting {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Verify if modem installation is successful - Model M7215</h1>
+
+<p>This document describes steps to verify if modem installation has been successful.</p>
+
+<div class="troubleshooting">
+    <h2>Verification Steps</h2>
+
+    <ol>
+        <li><strong>Do an API call:</strong> Do an API call to http://localhost:8889/test/</li>
+        <li><strong>Check bandwidth:</strong> In the API response, check bandwidth value is above 100 Mbps</li>
+        <li><strong>Check modem status:</strong> In the API response, check the registration status. This should be success</li>
+    </ol>
+</div>
+
+</body>
+</html>
